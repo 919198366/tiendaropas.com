@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HM Style - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <img src="img/logo.png" alt="logo" class="logo">
+      <button id="btnMenu" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <nav class="nav-center">
+      <a href="productos.html?cat=Mujer">MUJER</a>
+      <a href="productos.html?cat=Hombre">HOMBRE</a>
+      <a href="productos.html?cat=Niños">NIÑOS</a>
+      <a href="productos.html">HOME</a>
+    </nav>
+
+    <div class="header-right">
+      <button class="icon-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="carrito.html" class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+      <a href="perfil.html" class="icon-btn"><i class="fa-regular fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- SIDEBAR LATERAL -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <strong>MENU</strong>
+      <button id="closeMenu" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="sidebar-links">
+      <a href="productos.html?cat=Novedades">NOVEDADES</a>
+      <a href="productos.html?cat=Ropa">ROPA</a>
+      <a href="productos.html?cat=Accesorios">ACCESORIOS</a>
+      <a href="productos.html?cat=Zapatos">ZAPATOS</a>
+      <a href="productos.html?cat=Sale">SALE</a>
+      <a href="productos.html">VER TODO</a>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- puedes sustituir por <video> si prefieres -->
+    <img src="img/hero.jpg" alt="hero">
+  </section>
+
+  <!-- SECCION DESTACADOS -->
+  <main class="container">
+    <h2 class="section-title">DESTACADOS</h2>
+    <div id="featured" class="grid"></div>
+    <div class="actions">
+      <a href="productos.html" class="btn btn-outline">Ver colección</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mini H&M Style · Proyecto académico</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

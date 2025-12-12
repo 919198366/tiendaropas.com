@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Descubre las últimas tendencias en moda. Ropa, accesorios y calzado para mujer, hombre y niños. Envíos y devoluciones gratuitas.">
+  <title>Tienda de Moda - Lo último en tendencias</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- TOP BANNER -->
+  <div class="top-banner">
+    <div class="container">
+      <p>¡Envío estándar gratuito en compras superiores a S/ 199.00 | <a href="#" class="text-underline">Más información</a></p>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="header-left">
+          <button id="btnMenu" class="icon-btn menu-toggle"><i class="fa-solid fa-bars"></i></button>
+          <a href="index.html" class="logo">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=60&fit=crop&q=80" alt="Logo" class="logo-img">
+          </a>
+        </div>
+
+        <nav class="nav-center">
+          <div class="nav-item">
+            <a href="productos.html?cat=Mujer" class="nav-link">MUJER</a>
+          </div>
+          <div class="nav-item">
+            <a href="productos.html?cat=Hombre" class="nav-link">HOMBRE</a>
+          </div>
+          <div class="nav-item">
+            <a href="productos.html?cat=Niños" class="nav-link">NIÑOS</a>
+          </div>
+          <div class="nav-item">
+            <a href="productos.html" class="nav-link">BEBÉS</a>
+          </div>
+          <div class="nav-item">
+            <a href="productos.html?cat=Sale" class="nav-link sale">SALE</a>
+          </div>
+        </nav>
+
+        <div class="header-right">
+          <div class="search-container">
+            <button class="icon-btn search-toggle"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="search-box">
+              <input type="text" placeholder="Buscar productos...">
+              <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+<a href="carrito.html" class="icon-btn cart-icon" title="Carrito">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIDEBAR MENU -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <strong>MENÚ</strong>
+      <button id="closeMenu" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="sidebar-links">
+      <div class="sidebar-section">
+        <h3>Mujer</h3>
+        <a href="productos.html?cat=Mujer&subcat=Novedades">Novedades</a>
+        <a href="productos.html?cat=Mujer&subcat=Ropa">Ropa</a>
+        <a href="productos.html?cat=Mujer&subcat=Zapatos">Zapatos</a>
+        <a href="productos.html?cat=Mujer&subcat=Accesorios">Accesorios</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Hombre</h3>
+        <a href="productos.html?cat=Hombre&subcat=Novedades">Novedades</a>
+        <a href="productos.html?cat=Hombre&subcat=Ropa">Ropa</a>
+        <a href="productos.html?cat=Hombre&subcat=Zapatos">Zapatos</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Niños</h3>
+        <a href="productos.html?cat=Niños&subcat=Novedades">Novedades</a>
+        <a href="productos.html?cat=Niños&subcat=Ropa">Ropa</a>
+        <a href="productos.html?cat=Niños&subcat=Zapatos">Zapatos</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Ofertas</h3>
+        <a href="productos.html?cat=Sale" class="sale">Rebajas</a>
+      </div>
+    </div>
+  </aside>
+
+  <div id="overlay" class="overlay"></div>
+
+  <!-- HERO SLIDER -->
+  <section class="hero-slider">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=800&fit=crop&q=80');">
+      <div class="slide-content">
+        <h2>NUEVA COLECCIÓN PRIMAVERA</h2>
+        <p>Hasta 30% de descuento en selección de productos</p>
+        <a href="productos.html?cat=Novedades" class="btn btn-white">Comprar ahora</a>
+      </div>
+    </div>
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1920&h=800&fit=crop&q=80');">
+      <div class="slide-content">
+        <h2>MODA SOSTENIBLE</h2>
+        <p>Descubre nuestra colección consciente con materiales reciclados</p>
+        <a href="#" class="btn btn-white">Descubrir</a>
+      </div>
+    </div>
+    <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+    <div class="slider-dots"></div>
+  </section>
+
+  <!-- CATEGORÍAS DESTACADAS -->
+  <section class="featured-categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explorar categorías</h2>
+      </div>
+      <div class="categories-grid">
+        <a href="productos.html?cat=Mujer" class="category-card">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=400&fit=crop&q=80');"></div>
+          <h3>Mujer</h3>
+        </a>
+        <a href="productos.html?cat=Hombre" class="category-card">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1617137968427-85924c800a22?w=600&h=400&fit=crop&q=80');"></div>
+          <h3>Hombre</h3>
+        </a>
+        <a href="productos.html?cat=Niños" class="category-card">
+          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop&q=80');"></div>
+          <h3>Niños</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="featured-products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Lo más vendido</h2>
+        <a href="productos.html" class="view-all">Ver todo</a>
+      </div>
+      <div id="featured" class="products-grid">
+        <!-- Los productos se cargarán dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER PROMOCIONAL -->
+  <section class="promo-banner">
+    <div class="container">
+      <div class="promo-content">
+        <h2>¡Hasta 50% de descuento!</h2>
+        <p>En artículos seleccionados de la temporada pasada</p>
+        <a href="productos.html?cat=Sale" class="btn btn-white">Comprar ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVEDADES -->
+  <section class="new-arrivals">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Nuevos Ingresos</h2>
+        <a href="productos.html?cat=Novedades" class="view-all">Ver todo</a>
+      </div>
+      <div class="products-grid">
+        <!-- Los productos nuevos se cargarán dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <h3>¡Suscríbete a nuestro boletín!</h3>
+          <p>Recibe ofertas exclusivas y novedades directamente en tu correo</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Tu dirección de correo electrónico" required>
+          <button type="submit" class="btn btn-dark">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>COMPRAR</h4>
+          <ul>
+            <li><a href="productos.html?cat=Mujer">Mujer</a></li>
+            <li><a href="productos.html?cat=Hombre">Hombre</a></li>
+            <li><a href="productos.html?cat=Niños">Niños</a></li>
+            <li><a href="productos.html?cat=Bebes">Bebés</a></li>
+            <li><a href="productos.html?cat=Sale">Rebajas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>AYUDA</h4>
+          <ul>
+            <li><a href="#">Servicio al cliente</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+            <li><a href="#">Envíos</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Guía de tallas</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>EMPRESA</h4>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Sostenibilidad</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>SÍGUENOS</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="app-download">
+            <p>Descarga nuestra app</p>
+            <div class="app-buttons">
+              <a href="#" class="app-store">App Store</a>
+              <a href="#" class="play-store">Google Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>© 2025 Tienda de Moda. Todos los derechos reservados.</p>
+        </div>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-cc-paypal"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

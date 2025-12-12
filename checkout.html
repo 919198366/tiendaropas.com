@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perfil</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header class="header">
+    <div class="header-left"><img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=60&fit=crop&q=80" class="logo"></div>
+    <div class="header-right"><a href="carrito.html" class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></a></div>
+  </header>
+
+  <main class="container" style="padding-top:22px">
+    <div class="card" style="padding:18px">
+      <h3 id="pname">Usuario Invitado</h3>
+      <p id="pemail">Sin correo registrado</p>
+      <button class="btn" onclick="location.href='edit_profile.html'">Editar Perfil</button>
+    </div>
+  </main>
+
+  <script>
+    const nameEl = document.getElementById('pname'), emailEl = document.getElementById('pemail');
+    const n = localStorage.getItem('profile_name'), e = localStorage.getItem('profile_email');
+    if(n) nameEl.innerText = n; if(e) emailEl.innerText = e;
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Productos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- header + sidebar (mismo que index) -->
+  <header class="header">
+    <div class="header-left">
+      <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&h=60&fit=crop&q=80" alt="logo" class="logo">
+      <button id="btnMenu" class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <nav class="nav-center">
+      <a href="productos.html?cat=Mujer">MUJER</a>
+      <a href="productos.html?cat=Hombre">HOMBRE</a>
+      <a href="productos.html?cat=Niños">NIÑOS</a>
+      <a href="productos.html">HOME</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="carrito.html" class="icon-btn"><i class="fa-solid fa-bag-shopping"></i></a>
+    </div>
+  </header>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <strong>MENU</strong>
+      <button id="closeMenu" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="sidebar-links">
+      <a href="#">NOVEDADES</a>
+      <a href="#">ROPA</a>
+      <a href="#">ACCESORIOS</a>
+      <a href="#">ZAPATOS</a>
+      <a href="#">SALE</a>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <main class="container">
+    <div class="tools">
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Buscar producto..." />
+        <button id="clear" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="filters">
+        <select id="filterCat">
+          <option value="">Todas las categorías</option>
+        </select>
+        <select id="sort">
+          <option value="default">Ordenar</option>
+          <option value="price-asc">Precio ↑</option>
+          <option value="price-desc">Precio ↓</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="productsGrid" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mini H&M Style · Proyecto académico</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
